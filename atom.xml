@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>捉一颗星</title>
+  
+  <subtitle>See you again</subtitle>
+  <link href="http://mars-zb.github.io/atom.xml" rel="self"/>
+  
+  <link href="http://mars-zb.github.io/"/>
+  <updated>2021-10-26T15:20:06.728Z</updated>
+  <id>http://mars-zb.github.io/</id>
+  
+  <author>
+    <name>捉一颗星</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo技巧</title>
+    <link href="http://mars-zb.github.io/2021/10/26/Hexo%E6%8A%80%E5%B7%A7/"/>
+    <id>http://mars-zb.github.io/2021/10/26/Hexo%E6%8A%80%E5%B7%A7/</id>
+    <published>2021-10-26T15:17:12.000Z</published>
+    <updated>2021-10-26T15:20:06.728Z</updated>
+    
+    <content type="html"><![CDATA[<p>本篇文章是关于Hexo发布博客的一些技巧和写作要求。</p><span id="more"></span><p>注意每次执行终端或git的路径都要先跳转到指定文件夹路径下。<br>1、在Blog文件夹下出现，hexo : 无法将“hexo”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。解决:meiSet-ExecutionPolicy RemoteSigned -Scope CurrentUser</p><h2 id="2、写文章在Blog-source-posts-下新建-md文件编写，文章开头为"><a href="#2、写文章在Blog-source-posts-下新建-md文件编写，文章开头为" class="headerlink" title="2、写文章在Blog/source/_posts/下新建.md文件编写，文章开头为"></a>2、写文章在Blog/source/_posts/下新建.md文件编写，文章开头为</h2><p>title: 我的博客</p><hr><p>3、发布到github时命令：hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</p><p>4、创建标签或分类汇总<br>a、新建标签/分类：hexo new page tags/categories<br>b、添加type: “tags”/“categories”到内容中，效果如下</p><hr><p>title: 文章标签<br>date: 2017-05-27 13:47:40<br>type: “tags”/“categories”</p><hr><p>补充：<br>1、<br>给文章添加“tags”属性<br>打开需要添加标签的文章，为其添加tags属性。下方的tags:下方的- jQuery - 表格</p><ul><li>表单验证就是这篇文章的标签了</li></ul><hr><p>title: jQuery对表单的操作及更多应用<br>date: 2017-05-26 12:12:57<br>categories: </p><ul><li>web前端<br>tags:</li><li>jQuery</li><li>表格</li><li>表单验证</li></ul><hr><p>至此，成功给文章添加分类，点击首页的“标签”可以看到该标签下的所有文章。当然，只有添加了tags: xxx的文章才会被收录到首页的“标签”中。</p><p>细心的朋友可能已经发现，这两个的设置几乎一模一样！是的，没错，思路都是一样的。所以我们可以打开scaffolds/post.md文件，在tages:上面加入categories:,保存后，之后执行hexo new “文章名”创建文章，命令生成的文件，页面里就有categories:项了。</p><p>scaffolds目录下，是新建页面的模板，执行新建命令时，是根据这里的模板页来完成的，所以可以在这里根据你自己的需求添加一些默认值。</p><p>2、<br>写文章使用格式来让网页显示不同的颜色。<br>b、文章基本设置</p><hr><p>title: CentOS7下Tomcat启动慢的原因及解决方案<br>date: 2017-12-02 21:01:24<br>comments: false#是否可评论<br>toc: true #是否显示文章目录<br>categories: “云服务器” #分类</p><hr><p>并列分类，了解一下：<br>categories:</p><ul><li>[Linux]</li><li>[Tools]</li></ul><p>并列+子分类，再了解一下：<br>categories:</p><ul><li>[Linux, Hexo]</li><li>[Tools, PHP]</li></ul><p>3、写文章时如果不让首页每篇文章都全部展开，那么要在问章中接下来要隐藏的内容前加<!--more--></p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;本篇文章是关于Hexo发布博客的一些技巧和写作要求。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Tools" scheme="http://mars-zb.github.io/categories/Tools/"/>
+    
+    
+    <category term="Hexo" scheme="http://mars-zb.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>点云到地图</title>
+    <link href="http://mars-zb.github.io/2021/10/26/%E7%82%B9%E4%BA%91%E5%88%B0%E5%9C%B0%E5%9B%BE/"/>
+    <id>http://mars-zb.github.io/2021/10/26/%E7%82%B9%E4%BA%91%E5%88%B0%E5%9C%B0%E5%9B%BE/</id>
+    <published>2021-10-26T07:55:28.000Z</published>
+    <updated>2021-10-26T15:14:15.400Z</updated>
+    
+    <content type="html"><![CDATA[<p>SLAM模块生成点云，但规划模块是用地图进行导航的，那么怎么生成地图呢？这里以生成栅格地图为例。</p><span id="more"></span>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;SLAM模块生成点云，但规划模块是用地图进行导航的，那么怎么生成地图呢？这里以生成栅格地图为例。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Navigation-Stack" scheme="http://mars-zb.github.io/categories/Navigation-Stack/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Help</title>
+    <link href="http://mars-zb.github.io/2021/10/26/Help/"/>
+    <id>http://mars-zb.github.io/2021/10/26/Help/</id>
+    <published>2021-10-25T16:00:00.000Z</published>
+    <updated>2021-10-26T15:18:50.745Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><span id="more"></span><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Tools" scheme="http://mars-zb.github.io/categories/Tools/"/>
+    
+    
+    <category term="Hexo" scheme="http://mars-zb.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+</feed>
